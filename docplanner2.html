@@ -76,6 +76,14 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.grid {
+    margin: 0 -10px;
+}
+
 .main-header {
     position: fixed;
     top: 0;
@@ -390,8 +398,23 @@ img {
 img {
     border: 0;
 }
+
+    .col-2, .col-3, .col-3-2, .col-3-4, .col-4, .col-5, .col-6, .col-37, .col-56 {
+        float: none;
+        width: 100%;
+    }
+
+.col-3 {
+    width: 33.33%;
+}
+[class*=col-] {
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+}
 .services__item--clinics {
     background: #1b2734;
+	
 }
     .services__item {
         padding: 1.375em 1.25em 0;
